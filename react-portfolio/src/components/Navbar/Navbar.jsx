@@ -1,30 +1,30 @@
 import React from "react";
 import '../Navbar/Navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar(props) {
 
-    const onMouseHover = (obj) => {
-
+    const redirect = (page) => {
+        window.location.href = page;
     }
-//   render() {
     return (
       <>
-        <div class="navbar-container centered">
-          <div class="ml-2 navbar-item-container centered">
-            <span class="font-weight-bold navbar-item centered">About Me</span>
-            <div class="navbar-item-selected navbar-border navbar-item"></div>
+        <div className="navbar-container centered">
+          <div className="ml-2 navbar-item-container centered">
+            <span className="font-weight-bold navbar-item centered" onClick={() => redirect('/about')}>About Me</span>
+            <div className="navbar-item-selected navbar-border navbar-item"></div>
           </div>
-          <div class="ml-2 navbar-item-container centered">
-            <span class="navbar-item centered">Projects</span>
-            <div class="underline-from-left navbar-border navbar-item"></div>
+          <div className="ml-2 navbar-item-container centered">
+            <span className="navbar-item centered" onClick={() => redirect('/projects')}>Projects</span>
+            <div className="underline-from-left navbar-border navbar-item"></div>
           </div>
-          <div class="ml-2 navbar-item-container centered">
-            <span class="navbar-item centered">Resume</span>
-            <div class="underline-from-left navbar-border navbar-item"></div>
+          <div className="ml-2 navbar-item-container centered">
+            <span className="navbar-item centered" onClick={() => redirect('/resume')}>Resume</span>
+            <div className="underline-from-left navbar-border navbar-item"></div>
           </div>
-          <div class="ml-2 navbar-item-container centered">
-            <span class="navbar-item centered">Contact Me</span>
-            <div class="underline-from-left navbar-border navbar-item"></div>
+          <div className="ml-2 navbar-item-container centered">
+            <span className="navbar-item centered" onClick={() => redirect('/contact')}>Contact Me</span>
+            <div className="underline-from-left navbar-border navbar-item"></div>
           </div>
         </div>
       </>
