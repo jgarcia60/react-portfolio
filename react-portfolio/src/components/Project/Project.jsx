@@ -1,5 +1,5 @@
 import React from "react";
-import "./SingleProject.css";
+import "./Project.css";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +18,7 @@ const Project = ({
       <div className="col m4 project-image">
         {liveSiteUrl ? (
           <a href={liveSiteUrl} target="_blank" rel="noopener noreferrer">
-            <img src={image} alt="Sky Retro" />
+            <img src={image} alt="Project/Company picture" />
           </a>
         ) : (
           <img src={image} alt="Sky Retro" />
