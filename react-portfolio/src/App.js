@@ -5,6 +5,7 @@ import Resume from './containers/Resume/Resume';
 import Contact from './containers/Contact/Contact';
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" component={About} />
         </Switch>
       </Router>
+      <Footer></Footer>
     </div>
   );
 }
