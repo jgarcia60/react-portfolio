@@ -9,3 +9,13 @@
 .project-image img {
   width: 100%;
 }
+
+.technologies {
+  margin: .2em .8em .5em 0;
+  padding: .2em 1em;
+  font-size: .9em;
+  color: #1da73b;
+  border: 0 solid rgba(10, 247, 69, 0.2);
+  background-color: rgba(78, 248, 36, 0.1);
+  border-radius: 100px;
+}

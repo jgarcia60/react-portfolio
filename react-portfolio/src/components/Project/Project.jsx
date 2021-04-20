@@ -15,7 +15,7 @@ const Project = ({
 }) => {
   return (
     <div className="row single-project">
-      <div className="col m4 project-image">
+      <div className="col-md-4 project-image">
         {liveSiteUrl ? (
           <a href={liveSiteUrl} target="_blank" rel="noopener noreferrer">
             <img src={image} alt="Project/Company picture" />
@@ -24,7 +24,7 @@ const Project = ({
           <img src={image} alt="Sky Retro" />
         )}
       </div>
-      <div className="col m8 single-project-right">
+      <div className="col-md-8 single-project-right">
         <div className="project-title">
           <h5>
             {liveSiteUrl ? (
@@ -40,19 +40,19 @@ const Project = ({
           <p>{description}</p>
           <p>Technologies:</p>
           {technologies.map((technology, index) => (
-            <button key={index}>{technology}</button>
+            <button className="btn btn-outline-danger technologies" key={index}>{technology}</button>
           ))}
           <div className="project-links">
             <div className="row">
               {liveSiteUrl && (
-                <div className="col s12">
+                <div className="col-sm-12">
                   <FontAwesomeIcon icon={faDesktop} />
                   <span> </span>
                   <a href={liveSiteUrl}>Live Site</a>
                 </div>
               )}
               {gitHubUrl && (
-                <div className="col s12">
+                <div className="col-sm-12">
                   <FontAwesomeIcon icon={faGithub} />
                   <span> </span>
                   <a href={gitHubUrl}>View Repo</a>
